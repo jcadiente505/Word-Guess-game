@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <script src="./assets/javascript/game.js"></script>
+ <title>Document</title>
+</head>
+<body>
+
+    <!--html content for each catagory-->
+   <div id="mainheader">
+        <h1>Hangman!</h1>
+        <h2>Pick a Category!</h2>
+    </div>
+
+    <div id="moviegame">
+        <div class="header">
+            <h1>Hangman!</h1>
+            <h2>Movies!</h2>
+        </div>
+        <div class="gamesection">
+            <p class="lives">Lives = </p>
+            <p class="guesses">Wrong = </p>
+            <p class="wins">Wins = </p>
+            <p class="losses">Losses = </p>
+            <p id="movieword"></p>
+        </div>
+    </div>
+
+    <div id="songsgame">
+        <div class="header">
+            <h1>Hangman!</h1>
+            <h2>Songs!</h2>
+        </div>
+        <div class="gamesection">
+            <p class="songsword"></p>
+            <p class="lives">lives!</p>
+            <p class="guesses">guesses left!</p>
+        </div>
+    </div>
+
+    <div id="historygame">
+        <div class="header">
+            <h1>Hangman!</h1>
+            <h2>History!</h2>
+        </div>
+        <div class="gamesection">
+            <p class="historyword"></p>
+            <p class="lives">lives!</p>
+            <p class="guesses">guesses left!</p>
+        </div>
+    </div>
+
+    <div id="sciencegame">
+        <div class="header">
+            <h1>Hangman!</h1>
+            <h2>Science!</h2>
+        </div>
+        <div class="gamesection">
+            <p class="scienceword"></p>
+            <p class="lives">lives!</p>
+            <p class="guesses">guesses left!</p>
+        </div>
+    </div>
+
+    
+    <!-- HTML buttons with onclick attribute changes page content to specific catagory (JS line 28-92) -->
+    <div class="buttons">
+        <button class="moviebutton" onclick="moviebtn()">Movies</button>
+        <button class="songsbutton" onclick="songsbtn()">Songs</button>
+        <button class="historybutton" onclick="historybtn()">History</button>
+        <button class="sciencebutton" onclick="sciencebtn()">Science</button>
+    </div>
+
+
+</body>
+</html>

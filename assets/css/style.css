@@ -1,0 +1,134 @@
+body {
+    background-color: dimgrey;
+    font-family: sans-serif;
+}
+.header {
+    margin-left: 250px;
+    margin-right: 250px;
+    display: block;
+}
+
+#mainheader {
+    margin-left: 250px;
+    margin-right: 250px;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: bold; 
+}
+
+#movieword {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+.lives {
+    margin-left: 250px;
+    font-size: 40px;
+}
+
+.guesses {
+    margin-left: 250px;
+    font-size: 40px;
+}
+
+.wins {
+margin-left: 250px;
+    font-size: 40px;
+}
+
+.losses {
+    margin-left: 250px;
+    font-size: 40px;
+}
+
+
+.buttons {
+    margin-left: 250px;
+    margin-right: 250px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+}
+
+.moviebutton {
+    background-color: red;
+    color: white;
+    border: none;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 29px;
+    margin-bottom: 10px;
+}
+
+.songsbutton {
+    background-color: green;
+    color: white;
+    border: none;
+    text-align: center;
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    position: relative;
+    margin-left: 8px;
+}
+
+.historybutton {
+    background-color: blue;
+    color: white;
+    border: none;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 29px;
+    position: relative;
+    margin-right: 5px;
+}
+
+.sciencebutton {
+    background-color: purple;
+    color: white;
+    border: none;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 28px;
+    position: relative;
+}
+/* hides the button catagories until called (JS line 10-50) */
+#moviegame {
+    display: none;
+}
+
+#songsgame {
+    display: none;
+}
+
+#historygame {
+    display: none;
+}
+
+#sciencegame {
+    display: none;
+}
