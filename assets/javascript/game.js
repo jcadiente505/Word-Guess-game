@@ -1,6 +1,7 @@
 
 // variables
 var moviebank = ["tonystark", "hansolo", "aragorn"];
+var winscounter = 0;
 var wins = 0;
 var losses = 0;
 var livesLeft = 10;
@@ -58,7 +59,7 @@ function reset() {
 function display() {
 document.getElementById("lives").textContent = ("Lives Left = " + livesLeft);
 document.getElementById("guesses").textContent = ("WRONG = " + wrongLetter);
-document.getElementById("wins").textContent = ("Wins = " + wins);
+document.getElementById("wins").textContent = ("Wins = " + winscounter);
 document.getElementById("losses").textContent = ("Losses = " + losses);
 };
 
@@ -73,13 +74,17 @@ function currentHeader() {
 function winLose() {
     if (wins === answer.length) {
         alert("YOU WIN!");
-        wins++;
+        winscounter++;
+        wins = 0;
+        wrongLetter = [];
         display ();
         moviebtn();
     }
     else if (livesLeft === 0) {
         alert("YOU LOSE!");
         losses++;
+        livesLeft = 10;
+        wrongLetter = [];
         display();
         moviebtn();
     }
